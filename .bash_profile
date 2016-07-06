@@ -10,4 +10,4 @@ function include {
 }
 
 include "$HOME/.env_variables"
-include "$PWD/helpers/projects.sh"
+include "$HOME/.bash_helpers/projects.sh"
