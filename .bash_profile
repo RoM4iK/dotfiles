@@ -5,19 +5,9 @@
 alias l="ls -lah"
 alias pgsql="sudo -su postgres psql"
 
-function project {
-  if [ -n "$2" ]
-  then
-    cd $(projects -o --$1=$2)
-  else
-    cd $(projects -o --name=$1)
-  fi
+function include {
+    [[ -f "$1" ]] && source "$1"
 }
-function project_dir {
-  if [ -n "$2" ]
-  then
-    echo $(projects -o --$1=$2)
-  else
-    echo $(projects -o --name=$1)
-  fi
-}
+
+include "$HOME/.env_variables"
+include "$PWD/helpers/projects.sh"
