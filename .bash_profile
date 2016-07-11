@@ -11,3 +11,4 @@ function include {
 
 include "$HOME/.env_variables"
 include "$HOME/.bash_helpers/projects.sh"
+include "$HOME/.bash_helpers/docker.sh"
