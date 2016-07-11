@@ -1,5 +1,5 @@
 function codeclimate() {
-  sudo docker run \
+  docker run \
   --interactive --tty --rm \
   --env CODECLIMATE_CODE="$PWD" \
   --volume "$PWD":/code \
