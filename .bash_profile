@@ -5,6 +5,8 @@
 alias l="ls -lah"
 alias pgsql="sudo -su postgres psql"
 
+eval $(thefuck --alias fuck)
+
 function include {
     [[ -f "$1" ]] && source "$1"
 }
