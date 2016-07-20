@@ -10,3 +10,33 @@
   'ctrl-shift-v': 'clipboard-plus:toggle'
 '.platform-linux atom-text-editor:not([mini])':
   'ctrl-shift-v': 'clipboard-plus:toggle'
+
+#multiple-cursors-plus
+'atom-workspace atom-text-editor':
+  # Unset editor keybindings (conflict with multi-cursor-plus)
+  'alt-left':        'unset!'
+  'alt-right':       'unset!'
+  'alt-shift-left':  'unset!'
+  'alt-shift-right': 'unset!'
+
+'atom-workspace':
+  # Key bindings for multi-cursor-plus
+  'alt-x':                'multi-cursor-plus:mark'
+  'alt-up':               'multi-cursor-plus:move-up'
+  'alt-down':             'multi-cursor-plus:move-down'
+  'alt-left':             'multi-cursor-plus:move-left'
+  'alt-right':            'multi-cursor-plus:move-right'
+  'ctrl-alt-left':        'multi-cursor-plus:move-to-beginning-of-word'
+  'ctrl-alt-right':       'multi-cursor-plus:move-to-end-of-word'
+  'alt-home':             'multi-cursor-plus:move-to-first-character-of-line'
+  'alt-end':              'multi-cursor-plus:move-to-end-of-line'
+  'ctrl-alt-home':        'multi-cursor-plus:move-to-top'
+  'ctrl-alt-end':         'multi-cursor-plus:move-to-bottom'
+  'alt-shift-left':       'multi-cursor-plus:select-left'
+  'alt-shift-right':      'multi-cursor-plus:select-right'
+  'ctrl-alt-shift-left':  'multi-cursor-plus:select-to-beginning-of-word'
+  'ctrl-alt-shift-right': 'multi-cursor-plus:select-to-end-of-word'
+  'alt-shift-home':       'multi-cursor-plus:select-to-first-character-of-line'
+  'alt-shift-end':        'multi-cursor-plus:select-to-end-of-line'
+  'ctrl-alt-shift-home':  'multi-cursor-plus:select-to-top'
+  'ctrl-alt-shift-end':   'multi-cursor-plus:select-to-bottom'
