@@ -16,7 +16,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
-
+Plugin 'matze/vim-move'
 
 
 
@@ -38,14 +38,6 @@ colorscheme one-dark
 " Nerd tree
 map <C-Tab> :NERDTreeToggle <CR>
 
-" Move line up and down
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
-
 " Syntax configurations
 
 set expandtab
@@ -57,3 +49,8 @@ set softtabstop=2
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+set number
+
+" Backup configuration
+set nobackup
+set noswapfile 
