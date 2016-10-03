@@ -6,6 +6,7 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
+		--exclude "setup" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
