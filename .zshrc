@@ -96,3 +96,4 @@ function include {
 include "$HOME/.env_variables"
 include "$HOME/.sh_helpers/projects.sh"
 include "$HOME/.sh_helpers/docker.sh"
+include "$HOME/.sh_helpers/rake_test.sh"
