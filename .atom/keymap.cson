@@ -40,3 +40,7 @@
   'alt-shift-end':        'multi-cursor-plus:select-to-end-of-line'
   'ctrl-alt-shift-home':  'multi-cursor-plus:select-to-top'
   'ctrl-alt-shift-end':   'multi-cursor-plus:select-to-bottom'
+
+# Emmet in jsx
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
