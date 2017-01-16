@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias pgsql="sudo -su postgres psql"
+alias pgsql="psql -U postgres"
 
 eval $(thefuck --alias fuck)
 
