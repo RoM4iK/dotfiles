@@ -1,7 +1,16 @@
-# Expand region
+
+
 'atom-text-editor':
+  # Expand region
   'ctrl-shift-up': 'expand-region:expand'
   'ctrl-shift-down': 'expand-region:shrink'
+  'cmd-shift-up': 'expand-region:expand'
+  'cmd-shift-down': 'expand-region:shrink'
+  'cmd-down': 'editor:move-line-down'
+  'cmd-up': 'editor:move-line-up'
+  'cmd-left': 'editor:move-to-beginning-of-word'
+  'cmd-right': 'editor:move-to-end-of-word'
+  'cmd-backspace': 'editor:delete-to-beginning-of-word'
 
 # Clipboard Plus
 '.platform-darwin atom-text-editor:not([mini])':
