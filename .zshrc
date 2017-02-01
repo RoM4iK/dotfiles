@@ -97,3 +97,4 @@ include "$HOME/.env_variables"
 include "$HOME/.sh_helpers/projects.sh"
 include "$HOME/.sh_helpers/docker.sh"
 include "$HOME/.sh_helpers/rake_test.sh"
+PROMPT='${ret_status}%{$fg_bold[green]%}[%T]%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
