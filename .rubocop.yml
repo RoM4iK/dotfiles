@@ -1,5 +1,7 @@
 Style/Documentation:
   Enabled: false
+Style/EmptyMethod:
+  Enabled: false
 Metrics/LineLength:
   Max: 100
 Metrics/MethodLength:
