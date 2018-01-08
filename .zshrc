@@ -52,7 +52,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails nvm zsh-autosuggestions)
+plugins=(git nvm zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,6 +95,4 @@ function include {
 
 include "$HOME/.env_variables"
 include "$HOME/.sh_helpers/projects.sh"
-include "$HOME/.sh_helpers/docker.sh"
-include "$HOME/.sh_helpers/rake_test.sh"
 PROMPT='${ret_status}%{$fg_bold[green]%}[%T]%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
