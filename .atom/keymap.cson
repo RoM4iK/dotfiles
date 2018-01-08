@@ -1,5 +1,3 @@
-
-
 'atom-text-editor':
   # Expand region
   'ctrl-shift-up': 'expand-region:expand'
@@ -50,6 +48,5 @@
   'ctrl-alt-shift-home':  'multi-cursor-plus:select-to-top'
   'ctrl-alt-shift-end':   'multi-cursor-plus:select-to-bottom'
 
-# Emmet in jsx
-'atom-text-editor[data-grammar~="jsx"]:not([mini])':
-  'tab': 'emmet:expand-abbreviation-with-tab'
+'atom-text-editor[data-grammar="text html mustache"]:not([mini])':
+    'tab': 'emmet:expand-abbreviation-with-tab'
