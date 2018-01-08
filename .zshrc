@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias pgsql="psql -U postgres"
 
-eval $(thefuck --alias fuck)
+eval $(thefuck --alias --enable-experimental-instant-mode)
 
 function include {
     [[ -f "$1" ]] && source "$1"
