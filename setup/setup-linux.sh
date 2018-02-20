@@ -2,7 +2,6 @@
 
 read -p "Do you want to run apt-get update? (y/n) " -n 1;
 echo "";
-apt_installations = "";
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   sudo apt-get update
